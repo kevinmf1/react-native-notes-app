@@ -147,4 +147,3 @@ Jika Anda menemukan bug atau memiliki pertanyaan, silakan buka [issue](https://g
 ---
 
 **Note:** Project ini dibuat menggunakan Expo. Untuk informasi lebih lanjut tentang Expo, kunjungi [dokumentasi Expo](https://docs.expo.dev/).
-```
