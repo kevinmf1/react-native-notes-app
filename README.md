@@ -1,50 +1,150 @@
-# Welcome to your Expo app 👋
+# React Native Notes App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplikasi Notes berbasis React Native yang dibangun menggunakan Expo Router dengan TypeScript. Project ini menyediakan template modern untuk pengembangan aplikasi mobile cross-platform.
 
-## Get started
+## 🚀 Tech Stack
 
-1. Install dependencies
+- **React Native** 0.81.5
+- **React** 19.1.0
+- **Expo** ~54.0.23
+- **Expo Router** ~6.0.14
+- **TypeScript** ~5.9.2
+- **React Navigation** (Bottom Tabs & Native)
 
-   ```bash
-   npm install
-   ```
+## 📋 Prerequisites
 
-2. Start the app
+Sebelum memulai, pastikan Anda telah menginstall:
 
-   ```bash
-   npx expo start
-   ```
+- Node.js (versi LTS terbaru)
+- npm atau yarn
+- Expo CLI
+- iOS Simulator (untuk Mac) atau Android Emulator
 
-In the output, you'll find options to open the app in a
+## 🔧 Installation
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+1. Clone repository ini:
 ```bash
-npm run reset-project
+git clone https://github.com/kevinmf1/react-native-notes-app.git
+cd react-native-notes-app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies:
+```bash
+npm install
+```
 
-## Learn more
+## 🏃 Running the App
 
-To learn more about developing your project with Expo, look at the following resources:
+### Start Development Server
+```bash
+npm start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Platform Specific
 
-## Join the community
+**Android:**
+```bash
+npm run android
+```
 
-Join our community of developers creating universal apps.
+**iOS:**
+```bash
+npm run ios
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+**Web:**
+```bash
+npm run web
+```
+
+## 📁 Project Structure
+
+```
+react-native-notes-app/
+├── app/                    # Expo Router pages
+│   ├── (tabs)/            # Tab navigation screens
+│   ├── _layout.tsx        # Root layout
+│   └── modal.tsx          # Modal screen
+├── components/            # Reusable components
+│   ├── ui/               # UI components
+│   ├── external-link.tsx
+│   ├── haptic-tab.tsx
+│   ├── hello-wave.tsx
+│   ├── parallax-scroll-view.tsx
+│   ├── themed-text.tsx
+│   └── themed-view.tsx
+├── constants/            # App constants
+├── hooks/               # Custom React hooks
+├── assets/              # Images, fonts, etc.
+├── scripts/             # Utility scripts
+└── package.json
+```
+
+## 🛠️ Available Scripts
+
+- `npm start` - Start Expo development server
+- `npm run android` - Run on Android device/emulator
+- `npm run ios` - Run on iOS simulator
+- `npm run web` - Run on web browser
+- `npm run lint` - Run ESLint
+- `npm run reset-project` - Reset project to initial state
+
+## 📦 Key Dependencies
+
+### Core
+- `expo` - Expo SDK
+- `expo-router` - File-based routing
+- `react-native-reanimated` - Animations
+- `react-native-gesture-handler` - Gesture handling
+- `react-native-safe-area-context` - Safe area support
+
+### UI & Navigation
+- `@react-navigation/bottom-tabs` - Bottom tab navigation
+- `@react-navigation/native` - React Navigation core
+- `@expo/vector-icons` - Icon library
+- `expo-symbols` - SF Symbols support
+
+### Development
+- `typescript` - TypeScript support
+- `eslint` - Code linting
+- `eslint-config-expo` - Expo ESLint configuration
+
+## 🎨 Features
+
+- ✅ File-based routing with Expo Router
+- ✅ TypeScript support
+- ✅ Bottom tab navigation
+- ✅ Modal screens
+- ✅ Themed components (light/dark mode ready)
+- ✅ Haptic feedback
+- ✅ Animated components
+- ✅ Parallax scroll view
+- ✅ Safe area handling
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is private and not licensed for public use.
+
+## 👤 Author
+
+**kevinmf1**
+- GitHub: [@kevinmf1](https://github.com/kevinmf1)
+
+## 📞 Support
+
+Jika Anda menemukan bug atau memiliki pertanyaan, silakan buka [issue](https://github.com/kevinmf1/react-native-notes-app/issues).
+
+---
+
+**Note:** Project ini dibuat menggunakan Expo. Untuk informasi lebih lanjut tentang Expo, kunjungi [dokumentasi Expo](https://docs.expo.dev/).
+```
